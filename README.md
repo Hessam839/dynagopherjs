@@ -1,6 +1,6 @@
 this sample code generate dynamic website like React.js
 
-###Running Code
+### Running Code
 GopherJS [requires Go 1.18 or newer](https://github.com/gopherjs/gopherjs/blob/master/doc/compatibility.md#go-version-compatibility). If you need an older Go
 version, you can use an [older GopherJS release](https://github.com/gopherjs/gopherjs/releases).
 
