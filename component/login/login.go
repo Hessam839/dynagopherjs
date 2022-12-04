@@ -1,24 +1,16 @@
 package login
 
-import "honnef.co/go/js/dom"
+import (
+	"github.com/siongui/godom"
+	"gopherjs/component/vue"
+)
 
-func Render() dom.Node {
-	doc := dom.GetWindow().Document()
-	frag := doc.CreateDocumentFragment()
-	div := doc.CreateElement("div")
-	div.SetAttribute("style","")
-
-	form := doc.CreateElement("form")
-
-	userName := user()
-
-	password := pass()
-
-	form.AppendChild(userName)
-	form.AppendChild(password)
-
-	div.AppendChild(form)
-
-	frag.AppendChild(div)
-	return frag
+func Render() *godom.Object {
+	return vue.Form("", map[string]interface{}{"action": "login"},
+		vue.Label("", map[string]interface{}{"label": "User Name: "}, nil),
+		vue.TextInput("", map[string]interface{}{"name": "username", "id": "username", "placeholder": "username"}, nil),
+		vue.Label("", map[string]interface{}{"label": "Password: "}, nil),
+		vue.PassInput("", map[string]interface{}{"name": "password", "placeholder": "password"}, nil),
+		vue.ButtonInput("", map[string]interface{}{"label": "Login"}, nil),
+	)
 }
