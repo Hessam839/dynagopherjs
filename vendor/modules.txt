@@ -1,9 +1,17 @@
+# github.com/aymerick/raymond v2.0.2+incompatible
+## explicit
+github.com/aymerick/raymond
+github.com/aymerick/raymond/ast
+github.com/aymerick/raymond/lexer
+github.com/aymerick/raymond/parser
 # github.com/gopherjs/gopherjs v1.17.2
 ## explicit; go 1.17
 github.com/gopherjs/gopherjs/js
 # github.com/siongui/godom v0.0.0-20200920152407-31a6de96fdf6
 ## explicit; go 1.14
 github.com/siongui/godom
+# gopkg.in/yaml.v2 v2.4.0
+## explicit; go 1.15
 # honnef.co/go/js/dom v0.0.0-20221001195520-26252dedbe70
 ## explicit
 honnef.co/go/js/dom
