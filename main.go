@@ -10,5 +10,4 @@ func main() {
 	console := godom.Window.Get("console")
 	console.Call("log", "app: ", app)
 	app.AppendChild(login.Render())
-
 }
